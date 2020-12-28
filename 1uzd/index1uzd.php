@@ -8,7 +8,9 @@ $player2_2 = rand(1, 11);
 ?>
 
 <html lang="en">
+
 	<head>
+
 		<meta charset="UTF-8" />
 		<title>beveik 21</title>
 		<link rel="stylesheet" href="style.css" />
@@ -50,26 +52,26 @@ $player2_2 = rand(1, 11);
 
 		<h1><?php
 
-		if(($player1_1 + $player1_2) == ($player2_1 + $player2_2)) {
+			if(($player1_1 + $player1_2) == ($player2_1 + $player2_2)) {
 
-			print "Tie";
+				print "Tie";
 
-		} elseif(($player1_1 + $player1_2) == 22 && ($player2_1 + $player2_2) == 21) {
+			} elseif(($player1_1 + $player1_2) == 22 && ($player2_1 + $player2_2) == 21) {
 
-			print "Violeta is the winner with " . ($player2_1 + $player2_2);
+				print "Violeta is the winner with " . ($player2_1 + $player2_2);
 
-		} elseif(($player1_1 + $player1_2) == 21 && ($player2_1 + $player2_2) == 22) {
+			} elseif(($player1_1 + $player1_2) == 21 && ($player2_1 + $player2_2) == 22) {
 
-			print "Enemy is the winner with " . ($player1_1 + $player1_2);
+				print "Enemy is the winner with " . ($player1_1 + $player1_2);
 
-		} elseif(21 - ($player1_1 + $player1_2) < 21 - ($player2_1 + $player2_2)) {
+			} elseif(21 - ($player1_1 + $player1_2) < 21 - ($player2_1 + $player2_2)) {
 
-			print "Enemy is the winner with " . ($player1_1 + $player1_2);
+				print "Enemy is the winner with " . ($player1_1 + $player1_2);
 
-		} else {
+			} else {
 
-			print "Violeta is the winner with " . ($player2_1 + $player2_2);
-		}	
+				print "Violeta is the winner with " . ($player2_1 + $player2_2);
+			}	
 		
 		?>!!!</h1>
 
@@ -88,5 +90,6 @@ $player2_2 = rand(1, 11);
 		</div>
 
 	</body>
+
 </html>
 
