@@ -18,12 +18,12 @@ $player2_2 = rand(1, 11);
 			h1 {
 				text-align: center;
 				color: #7957fb;
-			} 
+			}
+
 			h2 {
 				text-align: center;
 				color: #79a7e8;
 			}
-
 
 			.boxcontainer {
 				display: flex;
@@ -62,7 +62,7 @@ $player2_2 = rand(1, 11);
 
 			print "Enemy is the winner with " . ($player1_1 + $player1_2);
 
-	    } elseif(21 - ($player1_1 + $player1_2) < 21 - ($player2_1 + $player2_2)) {
+		} elseif(21 - ($player1_1 + $player1_2) < 21 - ($player2_1 + $player2_2)) {
 
 			print "Enemy is the winner with " . ($player1_1 + $player1_2);
 
