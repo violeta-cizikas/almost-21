@@ -17,12 +17,24 @@ $player2_2 = rand(1, 11);
 
 		<style type="text/css">
 			
+			* {
+				box-sizing: border-box;
+			}
+
+			html, body {
+				margin: 0;
+				padding: 0;
+				background: white;/*psl fono spalva ant ivairiu irenginiu*/
+			}
+
 			h1 {
+				margin: 10px;
 				text-align: center;
 				color: #7957fb;
 			}
 
 			h2 {
+				margin: 10px;
 				text-align: center;
 				color: #79a7e8;
 			}
@@ -34,9 +46,9 @@ $player2_2 = rand(1, 11);
 				width: 10vh;
 				height: 10vh;
 				position: absolute;
-			    top: 3vh;
-			    right: 3vh;
-			    cursor: pointer;
+				top: 3vh;
+				right: 3vh;
+				cursor: pointer;
 			}
 
 			.bananaRefreshRotating {
@@ -65,46 +77,6 @@ $player2_2 = rand(1, 11);
 				line-height: 15vh; /*naudojamas, tik tekstui*/				
 			}
 
-			@media screen and (max-width: 800px) {
-
-				html {
-					transform: scale(0.3);
-					margin-top: -170px;
-				}
-
-				.box {
-					width: 50vh;
-					height: 50vh;
-					border-radius: 20px;
-					line-height: 50vh; /*naudojamas, tik tekstui*/
-				}
-
-				.bananaRefresh {
-					width: 50vh;
-					height: 50vh;
-					right: -50vh;
-					top: 40vh;
-				}
-			}
-			
-			@media screen and (max-width: 420px) {
-
-				body {
-					box-sizing: border-box;
-				}
-
-				html {
-					transform: scale(0.6);
-					margin-top: -120px;
-				}	
-
-				.bananaRefresh {
-					width: 15vh;
-					height: 15vh;
-					right: -15vh;
-				}
-			}
-
 			/*banano animacija*/
 			@keyframes rotationBanana {
 			  	from {
@@ -114,6 +86,77 @@ $player2_2 = rand(1, 11);
 			  	to {
 			    	transform: rotate(360deg);
 			  	}
+			}
+
+			@media screen and (max-width: 800px) and (orientation: portrait) {
+				.box {
+					width: 40vw;
+					height: 40vw;
+					border-radius: 20px;
+					line-height: 40vw; /*naudojamas, tik tekstui*/
+				}
+
+				.bananaRefresh {
+					width: 10vh;
+					height: 10vh;
+					right: 2vh;
+					bottom: 4vh;
+					top: initial;
+				}
+			}
+
+			@media screen and (max-width: 800px) and (orientation: landscape) {
+				.box {
+					margin-top: 0;
+					margin-bottom: 0;
+					width: 25vh;
+					height: 25vh;
+					border-radius: 20px;
+					line-height: 25vh; /*naudojamas, tik tekstui*/
+				}
+
+				.bananaRefresh {
+					width: 20vh;
+					height: 20vh;
+					right: 10vh;
+					top: 10vh;
+				}
+			}
+			
+			@media screen and (max-width: 420px) and (orientation: portrait) {
+				.box {
+					margin: 10px;
+					width: 40vw;
+					height: 40vw;
+					border-radius: 20px;
+					line-height: 40vw; /*naudojamas, tik tekstui*/
+				}
+
+				.bananaRefresh {
+					width: 10vh;
+					height: 10vh;
+					right: 2vh;
+					bottom: 5vh;
+					top: auto;
+				}
+			}
+
+			@media screen and (max-width: 420px) and (orientation: landscape) {
+				.box {
+					margin: 10px;
+					width: 40vh;
+					height: 40vh;
+					border-radius: 20px;
+					line-height: 40vh; /*naudojamas, tik tekstui*/
+				}
+
+				.bananaRefresh {
+					width: 10vh;
+					height: 10vh;
+					right: 0vh;
+					top: 24vh;
+					bottom: auto;
+				}
 			}
 		</style>
 	</head>
